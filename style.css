@@ -1,0 +1,90 @@
+body{
+    background-color: hsl(0, 0%, 15%);
+    position: fixed;
+    padding: 0px;
+}
+
+
+#sideMenu {
+    position: fixed;
+    top: 0;
+    right: -200px; 
+    width: 200px;
+    height: 100%;
+    background-color: #f8f9fa;
+    transition: right 0.6s ease;
+    z-index: 3;
+    background-image: url('sky.avif');
+    background-size: cover;
+}
+
+button{
+    position: fixed;
+    background-image: url('menu.png');
+    background-color: hsl(0, 0%, 20%);
+    background-size: cover;
+    border: none;
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    right: 20px;
+    z-index: 1;
+    transition: ease 0.4s;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scaleX(20px);
+}
+
+#sideMenu ul{
+    list-style: none;
+    padding: 0; 
+    margin: 0px;
+    border: 1px black solid;
+
+}
+
+#sideMenu ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #000000;
+}
+#sideMenu ul li:first-child {
+    border-top: 1px solid #000000;
+}
+#sideMenu ul li:hover{
+    background-color: hsl(0, 0%, 25%);
+    cursor: pointer;
+}
+#navi {
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(0, 0%, 95%);
+    position: fixed;
+    background-color: hsl(0, 0%, 20%); /* Dark background color */
+    height: 50px;
+    width: 100%;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+}
+
+#navi ul {
+    margin: 0;
+    padding: 0; 
+    list-style: none; 
+}
+
+#navi ul li {
+    float: left;
+    line-height: 50px;
+    padding-right: 10px;
+}
+
+
+#navi ul li:hover {
+    background-color: hwb(0 33% 67%);
+    color: hsl(0, 0%, 80%); 
+    cursor: pointer;
+}
+
+
